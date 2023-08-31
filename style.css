@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background-color: rgba(90, 70, 40, 2);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 26);
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+}
+
+ form{
+    padding-top: 15%;
+    padding-left: 50px;
+} 
+.data{
+    height: 30px;
+    padding-left: 40px;
+    width: 80%;
+}
+.check{
+    font-size: 12px;
+}
+.i{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 7px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    padding-left: 19px;
+    font-size: 14px;
+}
+.btn{
+   margin-right: 80%;
+   margin-top: 17%;
+   width: 230px;
+   position: absolute;
+   border-radius: 20px;
+   height: 40px;
+   border: none;
+   background-color: white;
+}
+.p2{
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    background-color: rgb(2, 2, 63);
+    margin-top: -100px;
+    margin-left: 50px;
+}
