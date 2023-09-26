@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/076c99285e.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-   <div class="container">
-    <div class="card">
-        <form action="">
-            <div class="porfile">
-                <label for="profile-pic" class="p1">
-                    <img src="/img/avatar.png" alt="user" width="90px" class="p2">
-                </label>
-                <input type="file" id="profile-pic" style="display: none;" onchange="handleImageUpload(event)" required accept="png,jpg">
-            </div>
-            <div>
-                <label for="email">
-                    <img src="/img/user.png" alt="" class="i" width="16px">
-                    <input type="email" placeholder="Email ID" id="email" class="data">
-                </label>
-            </div><br>
-            <div>
-                <label for="password">
-                    <img src="/img/padlock.png" alt="" class="i" width="16px">
-                    <input type="password" placeholder="Password" class="data" id="password">
-                </label>
-            </div><br><br>
-            <label for="" class="check"><input type="checkbox" >Remeber me</label>
-            <span><a href="Forgot"> Forgot Password?</a></span>
-            <div>
-            <input class="btn" type="submit"></input></div>
+    <div class="container">
+        <div class="card">
+        <form action="" id="myform" onsubmit="myform()">
+                <div class="porfile">
+                    <label for="inputimg" class="p1">
+                        <img src="/img/avatar.png" alt="user" width="90px" class="p2" id="profilepic">
+                    </label>
+                    <input type="file" id="inputimg" style="display: none;" onchange="handleImageUpload(event)"
+                    required accept="png,jpg">
+                </div>
+                <div>
+                    <label for="email">
+                        <img src="/img/avatar.png" alt="" class="i" width="16px">
+                        <input type="email" placeholder="Email ID" id="email" class="data">
+                    </label>
+                </div><br>
+                <div>
+                    <label for="password">
+                        <img src="/img/padlock.png" alt="" class="i" width="16px">
+                        <input type="password" placeholder="Password" class="data" id="password">
+                    </label>
+                </div><br><br>
+                <label for="" class="check" id="box"><input type="checkbox" id="box">Remeber me</label>
+                <span><a href="Forgot"> Forgot Password?</a></span>
+                
+                <div class="btn">
+                    <input type="submit" id="myform"></input>
+                </div>
+            </form>
+            
         </div>
-    </form>
-    <!-- <div class="profile-pic-div">
-        <img src="img/img_0548.jpg" alt="">
-        <input type="file" name="" id="file">
-        <label for="file" id="uploadBtn">Choose File</label>
-    </div> -->
-      
-   
-</body>
+
+        <script src="app.js"></script>
+        
+    </body>
+
 </html>

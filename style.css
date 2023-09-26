@@ -10,7 +10,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
 .card{
     width: 300px;
@@ -20,6 +20,7 @@ body{
     position: relative;
     border-radius: 10px;
     background-color: white;
+    z-index: 1;
 }
 
  form{
@@ -47,20 +48,28 @@ span{
     padding-left: 19px;
     font-size: 14px;
 }
-.btn{
-   margin-right: 80%;
-   margin-top: 17%;
-   width: 230px;
-   position: absolute;
-   border-radius: 20px;
-   height: 40px;
-   border: none;
-   background-color: white;
-}
+
 .p2{
     border: 2px solid aliceblue;
     border-radius: 50%;
     background-color: rgb(2, 2, 63);
     margin-top: -100px;
-    margin-left: 50px;
+    margin-left: 60px;
+}
+input[type="submit"]{
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    color: black;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+}
+.btn{
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 40px;
+
+    width: 220px;
+    
 }
